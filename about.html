@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <script src="bgm.js"></script>
+  <title>About Me</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Segoe UI', sans-serif;
+      position: relative;
+      color: #111827;
+    }
+
+    /* Background video */
+    .background-video {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+      filter: brightness(60%);
+    }
+
+    /* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .navbar li a {
+      color: #f8fafc;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar li a:hover {
+      color: #60a5fa;
+    }
+
+    /* Container */
+    .container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 16px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .container img.center-img {
+      display: block;
+      margin: 0 auto 20px;
+      border: 5px solid #1d4ed8;
+      border-radius: 16px;
+      width: 300px;
+      height: 350px;
+      object-fit: cover;
+    }
+
+    h1 {
+      text-align: center;
+      color: #1d4ed8;
+      margin-bottom: 20px;
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table td {
+      padding: 12px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 1.1em;
+    }
+
+    table td:first-child {
+      font-weight: bold;
+      color: #1e40af;
+      width: 40%;
+    }
+
+    h2 {
+      color: #2563eb;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(15, 23, 42, 0.95);
+      color: white;
+      margin-top: 40px;
+      border-top: 3px solid #60a5fa;
+      font-size: 0.95em;
+    }
+
+    @media (max-width: 600px) {
+      .navbar ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      .container {
+        margin: 20px 10px;
+        padding: 20px;
+      }
+
+      .container img.center-img {
+        width: 100%;
+        height: auto;
+      }
+
+      table td {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+  <audio id="bgm" src="image/lagu2.mp3" loop></audio>
+
+<!-- Video Background -->
+<video autoplay muted loop class="background-video">
+  <source src="image/city.mp4" type="video/mp4">
+  
+</video>
+
+<!-- Navbar -->
+<header>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="experience.html">Education</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Main Content -->
+<div class="container">
+  <img src="image/AMSYAR2.jpeg" class="center-img" alt="Profile Picture">
+
+  <h1>ABOUT ME</h1>
+
+  <table>
+    <tr><td>Name</td><td>Muhammad Amsyar Bin Abdul Aziz</td></tr>
+    <tr><td>Age</td><td>21 years</td></tr>
+    <tr><td>Place of Birth</td><td>Tanah Merah, Kelantan</td></tr>
+    <tr><td>Address</td><td>No. 4 Rumah Kedai Peladang, Jalan Ismail Petra, Tanah Merah</td></tr>
+    <tr><td>Email Address</td><td>amsyarmuhd76@gmail.com</td></tr>
+    <tr><td>Number of Siblings</td><td>Two siblings, I am the first child</td></tr>
+    <tr><td>Diploma</td><td>Diploma in Information Management</td></tr>
+    <tr><td>Status</td><td>Single</td></tr>
+     <tr><td>hobby</td><td>play badminton</td></tr>
+  </table>
+</div>
+
+<!-- Footer -->
+<footer>
+ 
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Resume Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="image/logo_uitm.png" />
+  <script src="bgm.js"></script>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    video.background-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+      object-fit: cover;
+    }
+
+    ./* Navbar */
+    .navbar {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+
+    .navbar ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .navbar li a {
+      color: #f8fafc;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    .navbar li a:hover {
+      color: #60a5fa;
+    }
+
+    .hero {
+      margin-top: 50px;
+    }
+
+    .hero img {
+      border: 5px solid darkblue;
+      border-radius: 12px;
+      width: 300px;
+      height: 350px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      color: #fbbf24;
+    }
+
+    .hero h2 {
+      margin: 20px 0 10px;
+      font-size: 2em;
+    }
+
+    .hero p {
+      font-size: 1.2em;
+      color: #dbeafe;
+    }
+  </style>
+</head>
+
+<body>
+  <audio id="bgm" src="image/lagu1.mp3" loop></audio>
+
+  <video autoplay muted loop class="background-video">
+    <source src="image/nature.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="experience.html">Education</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="experience.html">Experience</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero" id="home">
+      <h1>WELCOME TO MY WEBSITE</h1>
+      <img src="image/AMSYAR.jpeg" alt="My Profile Picture" />
+      <h2>MUHAMMAD AMSYAR BIN ABDUL AZIZ</h2>
+      <p>Web Developer | Student | Tech Enthusiast</p>
+    </div>
+  </header>
+
+</body>
+</html>
